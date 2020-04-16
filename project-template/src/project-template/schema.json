@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "id": "ProjectTemplateSchema",
+  "title": "Takes a new angular application and add an enterprise template.",
+  "type": "object",
+  "properties": {
+    "project": {
+      "type": "string",
+      "description": "The name of the project.",
+      "$default": {
+        "$source": "projectName"
+      }
+    },
+    "path": {
+      "type": "string",
+      "format": "path",
+      "description": "The path to create the interface.",
+      "visible": false
+    },
+    "name": {
+      "type": "string",
+      "description": "Empty name.",
+      "visible": false,
+      "default": ""
+    }
+  },
+  "required": []
+}
